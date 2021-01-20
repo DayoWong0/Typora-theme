@@ -1,6 +1,6 @@
-@import "night/mermaid.dark.css";
-@import "night/codeblock.dark.css";
-@import "night/sourcemode.dark.css";
+@import "night-cus/mermaid.dark.css";
+@import "night-cus/codeblock.dark.css";
+@import "night-cus/sourcemode.dark.css";
 
 :root {
     --bg-color:  #363B40;
@@ -314,7 +314,8 @@ cite {
 blockquote {
     padding-left: 1.875rem;
     margin: 0 0 1.875rem 1.875rem;
-    border-left: solid 2px #474d54;
+    /*border-left: solid 2px #474d54;*/
+    border-left: 4px solid #4c98f7;
     padding-left: 30px;
     margin-top: 35px;
 }
@@ -737,7 +738,7 @@ footer {
     color: white;
 }
 
-.modal-footer .btn-default, 
+.modal-footer .btn-default,
 .modal-footer .btn-primary,
 .modal-footer .btn-default:not(:hover) {
     border: 1px solid;
@@ -1002,4 +1003,53 @@ footer.ty-footer {
 .export-item.active,
 .export-items-list-control {
     background: #d6d6d4
+}
+
+
+/* 自定义 css */
+
+/* 始终显示 h* 的标题序号，方便使用 ctrl + 数字 快捷键*/
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    color: #42adf5;
+    left: -1.5625rem;
+    top: .285714286rem;
+    border: 1px solid;
+    border-radius: 3px;
+    position: absolute;
+    float: left;
+    font-size: 9px;
+    padding-left: 2px;
+    padding-right: 2px;
+    vertical-align: bottom;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h1::before {
+    content: 'h1';
+}
+
+h2::before {
+    content: 'h2';
+}
+
+h3::before {
+    content: 'h3';
+}
+
+h4::before {
+    content: 'h4';
+}
+
+h5::before {
+    content: 'h5';
+}
+
+h6::before {
+    content: 'h6';
 }
