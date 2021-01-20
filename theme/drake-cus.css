@@ -1,3 +1,4 @@
+@import "common/common.css";
 :root {
     --side-bar-bg-color: #fff;
     --control-text-color: #777;
@@ -443,7 +444,7 @@ table tr td:last-child {
 
 .typora-quick-open-item {
 	font-size: 1rem !important;
-	height: 48px; 
+	height: 48px;
     padding-left: 8px;
     padding-top: 4px;
 }
@@ -474,7 +475,7 @@ footer {
     background-color: #fafafa;
     font-size: 1rem;
     background-color: var(--side-bar-bg-color);
-} 
+}
 
 .md-lang {
     color: #b4654d;
